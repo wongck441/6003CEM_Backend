@@ -3,7 +3,7 @@ var router = express.Router();
 var cors = require('cors')
 var db = require('../config')
 var account = require('./accountFunctions')
-var dog  = require('./dogFuntions')
+var dog = require('./dogFuntions')
 router.use(cors())
 
 router.post('/account/login', (req, res) => {
@@ -20,11 +20,11 @@ router.post('/account/register', (req, res) => {
     })
 })
 
-router.get('/dog/getList', function (req, res, next) {
-   return dog.getDogList().then((x) => {
-       res.send(x)
-       return x
-   })
+router.get('/dog/getList', function(req, res, next) {
+    return dog.getDogList().then((x) => {
+        res.send(x)
+        return x
+    })
 });
 
 router.post('/dog/add', (req, res) => {
@@ -41,8 +41,8 @@ router.post('/dog/edit', (req, res) => {
     })
 })
 
-router.get('/dog/remove', (req, res) => {
-    return dog.remove(req.query.id).then((x) => {
+router.post('/dog/remove', (req, res) => {
+    return dog.remove(req.body).then((x) => {
         res.send(x)
         return x
     })
