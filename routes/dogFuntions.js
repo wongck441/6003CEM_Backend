@@ -42,7 +42,6 @@ const remove = (data) => {
             return "Invalid API token"
         }
     })
-
 }
 
 const edit = (data) => {
