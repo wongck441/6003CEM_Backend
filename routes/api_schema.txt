@@ -1,0 +1,11 @@
+register
+{
+    "firstName": "test",
+    "lastName": "test",
+    "username": "test_normal",
+    "password": "test",
+    "passwordsalt": "test",
+    "email": "tes23dqwdqwqdqdqdw123t",
+    "avatarurl": "test",
+    "usertype": "normal"
+}
